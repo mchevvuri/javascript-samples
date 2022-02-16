@@ -47,3 +47,46 @@
 
 // console.log(markHigherBMI)
 
+// const hasDriversLicense = true;
+// const hasGoodVision = true;
+
+// const shouldDrive = hasDriversLicense && hasGoodVision;
+
+// if (shouldDrive) {
+//     console.log('sarah is able to drive');
+// } else {
+//     console.log('Someone should drive');
+// }
+
+// const isTired = true;
+
+// console.log(hasDriversLicense && hasGoodVision && isTired);
+
+// if (hasDriversLicense && hasGoodVision && !isTired) {
+//     console.log('sarah is able to drive');
+// } else {
+//     console.log('Someone should drive');
+// }
+
+// const dolphinsScore1 = 96;
+// const dolphinsScore2 = 98;
+// const dolphinsScore3 = 89;
+// const hasHundredScoreDolphins = (dolphinsScore1 >= 100) || (dolphinsScore2 >= 100) || (dolphinsScore3 >= 100);
+
+// const koalasScore1 = 88;
+// const koalasScore2 = 91;
+// const koalasScore3 = 98;
+// const hasHundredScoreKoalas = (koalasScore1 >= 100) || (koalasScore2 >= 100) || (koalasScore3 >= 100);
+
+// const dolphinsAvg = (dolphinsScore1 + dolphinsScore2 + dolphinsScore3) / 3;
+// const koalasAvg = (koalasScore1 + koalasScore2 + koalasScore3) / 3
+
+// if (dolphinsAvg === koalasAvg && (hasHundredScoreDolphins && hasHundredScoreKoalas)) {
+//     console.log("it's a draw");
+// } else if (dolphinsAvg > koalasAvg && hasHundredScoreDolphins) {
+//     console.log("dolphins win");
+// } else if (dolphinsAvg < koalasAvg && hasHundredScoreKoalas) {
+//     console.log("Koalas Win");
+// } else {
+//     console.log("no one wins")
+// }
