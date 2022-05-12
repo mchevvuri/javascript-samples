@@ -1,12 +1,10 @@
-'use strict';
+"use strict";
 
 // let hasDriversLicense = false;
 // const passTest = true;
 
 // if (passTest) hasDriversLicense = true;
 // if (hasDriversLicense) console.log('I can drive :D');
-
-
 
 // const calcAverage = (value1, value2, value3) => (value1 + value2 + value3) / 3;
 
@@ -64,7 +62,6 @@
 // console.log(tips)
 // const totalAmounts = [tips[0] + bills[0], tips[1] + bills[1], tips[2] + bills[2]]
 // console.log(totalAmounts)
-
 
 // const mark = {
 //     fullname: 'mark miller',
