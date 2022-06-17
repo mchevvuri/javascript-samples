@@ -26,4 +26,22 @@ const restaurant = {
       close: 24,
     },
   },
+  order: function (starterIndex, mainindex) {
+    return [this.starterMenu[starterIndex], this.mainMenu[mainindex]];
+  },
 };
+
+// let [main, , secondary] = restaurant.categories;
+// console.log(main, secondary);
+
+// [secondary, main] = [main, secondary];
+// console.log(main, secondary);
+
+// const [starterItem, mainItem] = restaurant.order(2, 1);
+// console.log(starterItem, mainItem);
+
+const { name, categories, openingHours } = restaurant;
+console.log(name, categories, openingHours);
+
+const { name: restaurantName } = restaurant;
+console.log(restaurantName);
