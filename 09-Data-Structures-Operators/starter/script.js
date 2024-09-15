@@ -29,6 +29,10 @@ const restaurant = {
   order: function (starterIndex, mainindex) {
     return [this.starterMenu[starterIndex], this.mainMenu[mainindex]];
   },
+
+  orderPasta: function (ing1, ing2, ing3) {
+    console.log(`ordered pasta with ingredients ${ing1}, ${ing2} and ${ing3}`);
+  },
 };
 
 // let [main, , secondary] = restaurant.categories;
@@ -43,5 +47,45 @@ const restaurant = {
 const { name, categories, openingHours } = restaurant;
 console.log(name, categories, openingHours);
 
-const { name: restaurantName } = restaurant;
-console.log(restaurantName);
+const { name: restaurantName, openingHours: openingHourDetails } = restaurant;
+console.log(restaurantName, openingHourDetails);
+
+const { menu: menuList = [], starterMenu: starterList = [] } = restaurant;
+console.log(menuList, starterList);
+
+// use '()' to wrap when need to mutate a, b instead of creating new variables.
+let a = 111;
+let b = 222;
+const obj = { a: 23, b: 33 };
+({ a, b } = obj);
+
+const {
+  openingHours: {
+    fri: { open: o, close: c },
+  },
+} = restaurant;
+console.log(o, c);
+
+const str = 'manoj';
+const letters = [...str, '', 'dd'];
+console.log(letters);
+
+// const ingredients = [
+//   prompt('ingredient 1?'),
+//   prompt('ingredient 2?'),
+//   prompt('ingredient 3?'),
+//   prompt('ingredient 4?'),
+// ];
+// console.log(ingredients);
+// restaurant.orderPasta(...ingredients);
+
+const restaurantCopy = { ...restaurant };
+restaurantCopy.name = 'pppppppp';
+console.log(restaurant);
+console.log(restaurantCopy);
+
+//rest pattern
+const colors = ['red', 'green', 'yellow', 'black', 'beige'];
+
+const [primary, seconday, ...others] = colors;
+console.log(primary, seconday, others);
